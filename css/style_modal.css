@@ -1,0 +1,52 @@
+/* Основное */
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 999; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s;
+}
+
+.modal_close {
+  color: white;
+  text-align: right;
+  margin-right: -34px;
+  margin-top: -12px;
+  cursor: pointer;
+  font-size: 42px;
+}
+
+.modal_close:hover {
+  color: red;
+}
+
+.modal_content {
+  max-width: 600px;
+  background: linear-gradient(rgba(220, 220, 220, 0.9), white);
+  color: black;
+  margin: 86px auto;
+  border: 1px solid #222;
+  border-radius: 36px 6px 36px 36px;
+  background-color: green;
+}
+
+.modal_info {
+  margin-top: -12px;
+  padding: 12px;
+}
+
+/* Дополнительные */
